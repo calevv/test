@@ -28,7 +28,7 @@ const BookCard = ({ book }) => {
                     {book?.title || '제목 없음'}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    저자: {book?.authors?.name || '알 수 없는 저자'}
+                    저자: {book?.authors[0]?.name || '알 수 없는 저자'}
                 </Typography>
             </CardContent>
         </Card>
